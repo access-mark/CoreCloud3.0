@@ -5,118 +5,119 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CoreCloud Talent Fit Engine</title>
   <meta name="description" content="AI-driven Talent Fit Engine for precision placement, faster hiring, and lower delivery risk." />
-  <link rel="stylesheet" href="assets/css/corecloud.css" />
+  <link rel="stylesheet" href="assets/css/corecloud.css?v=3" />
   <link rel="icon" href="assets/images/corecloud-logo.png" />
 </head>
 <body>
+  <canvas id="cc-ai-bg"></canvas>
 
-    <header class="cc-header">
-      <div class="cc-shell cc-header-inner">
-        <a href="index.html" class="cc-brand">
-          <img src="assets/images/corecloud-logo.png" alt="CoreCloud" class="cc-logo" />
-          <span class="cc-brand-text">CoreCloud</span>
-        </a>
-        <button class="cc-nav-toggle" aria-label="Toggle navigation" onclick="CC.toggleNav()">Menu</button>
-        <nav class="cc-nav" id="ccNav">
-          <a href="index.html" class="cc-nav-link">Home</a>
-          <a href="platform.html" class="cc-nav-link">Platform</a>
-          <a href="finops.html" class="cc-nav-link">FinOps AI</a>
-          <a href="talent.html" class="cc-nav-link cc-active">Talent AI</a>
-          <a href="pricing.html" class="cc-nav-link">Pricing AI</a>
-          <a href="navigator.html" class="cc-nav-link">Consulting AI</a>
-          <a href="solutions.html" class="cc-nav-link">Solutions</a>
-          <a href="partners.html" class="cc-nav-link">Partners</a>
-          <a href="about.html" class="cc-nav-link">About</a>
-          <a href="contact.html" class="cc-nav-link">Contact</a>
-        </nav>
-      </div>
-    </header>
+  <header class="cc-header">
+    <div class="cc-shell cc-header-inner">
+      <a href="index.html" class="cc-brand">
+        <img src="assets/images/corecloud-logo.png" alt="CoreCloud" class="cc-logo" />
+        <span class="cc-brand-text">CoreCloud</span>
+      </a>
+      <button class="cc-nav-toggle" aria-label="Toggle navigation" onclick="CC.toggleNav()">Menu</button>
+      <nav class="cc-nav" id="ccNav">
+        <a href="index.html" class="cc-nav-link">Home</a>
+        <a href="platform.html" class="cc-nav-link">Platform</a>
+        <a href="finops.html" class="cc-nav-link">FinOps AI</a>
+        <a href="talent.html" class="cc-nav-link cc-active">Talent AI</a>
+        <a href="pricing.html" class="cc-nav-link">Pricing AI</a>
+        <a href="navigator.html" class="cc-nav-link">Consulting AI</a>
+        <a href="solutions.html" class="cc-nav-link">Solutions</a>
+        <a href="partners.html" class="cc-nav-link">Partners</a>
+        <a href="about.html" class="cc-nav-link">About</a>
+        <a href="contact.html" class="cc-nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
 
   <main class="cc-main">
 
-<section class="cc-hero cc-hero-sub">
-  <div class="cc-shell cc-hero-inner">
-    <div class="cc-hero-copy">
-      <h1>Talent Fit Engine</h1>
-      <p class="cc-hero-lead">
-        Precision placement for critical IT roles, powered by data on skills, culture, and delivery performance.
-      </p>
-      <div class="cc-hero-actions">
-        <a href="contact.html" class="cc-btn cc-btn-primary">Optimise Your Talent Pipeline</a>
+    <section class="cc-hero cc-hero-sub">
+      <div class="cc-shell cc-hero-inner">
+        <div class="cc-hero-copy">
+          <h1>Talent Fit Engine</h1>
+          <p class="cc-hero-lead">
+            Precision placement for critical IT roles, powered by data on skills, culture, and delivery performance.
+          </p>
+          <div class="cc-hero-actions">
+            <a href="contact.html" class="cc-btn cc-btn-primary">Optimise Your Talent Pipeline</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="cc-section">
-  <div class="cc-shell">
-    <h2>Why Talent Intelligence Matters</h2>
-    <p>
-      Mis-hiring and delayed placements compound into missed deadlines, project overruns, and lost opportunity. The Talent Fit Engine
-      improves both speed and quality of hiring decisions.
-    </p>
-  </div>
-</section>
+    <section class="cc-section">
+      <div class="cc-shell">
+        <h2>Why Talent Intelligence Matters</h2>
+        <p>
+          Mis-hiring and delayed placements compound into missed deadlines, project overruns, and lost opportunity. The Talent Fit Engine
+          improves both speed and quality of hiring decisions.
+        </p>
+      </div>
+    </section>
 
-<section class="cc-section cc-section-alt">
-  <div class="cc-shell">
-    <h2>Core Capabilities</h2>
-    <div class="cc-grid cc-grid-3">
-      <div class="cc-card">
-        <h3>Fit Scoring</h3>
-        <p>Score candidates against roles across skills, experience, culture markers, and delivery expectations.</p>
+    <section class="cc-section cc-section-alt">
+      <div class="cc-shell">
+        <h2>Core Capabilities</h2>
+        <div class="cc-grid cc-grid-3">
+          <div class="cc-card">
+            <h3>Fit Scoring</h3>
+            <p>Score candidates against roles across skills, experience, culture markers, and delivery expectations.</p>
+          </div>
+          <div class="cc-card">
+            <h3>Placement Success Prediction</h3>
+            <p>Estimate the probability that a candidate will succeed in a specific environment.</p>
+          </div>
+          <div class="cc-card">
+            <h3>Auto-Shortlists</h3>
+            <p>Generate tight, prioritised shortlists for urgent roles within hours, not weeks.</p>
+          </div>
+          <div class="cc-card">
+            <h3>CV Summarisation</h3>
+            <p>Turn long-form CVs into concise, decision-ready profiles for hiring managers.</p>
+          </div>
+          <div class="cc-card">
+            <h3>Risk &amp; Red Flag Detection</h3>
+            <p>Highlight patterns that may warrant deeper conversations or additional checks.</p>
+          </div>
+          <div class="cc-card">
+            <h3>Feedback Loop</h3>
+            <p>Use real placement outcomes to continuously refine the matching model.</p>
+          </div>
+        </div>
       </div>
-      <div class="cc-card">
-        <h3>Placement Success Prediction</h3>
-        <p>Estimate the probability that a candidate will succeed in a specific environment.</p>
-      </div>
-      <div class="cc-card">
-        <h3>Auto-Shortlists</h3>
-        <p>Generate tight, prioritised shortlists for urgent roles within hours, not weeks.</p>
-      </div>
-      <div class="cc-card">
-        <h3>CV Summarisation</h3>
-        <p>Turn long-form CVs into concise, decision-ready profiles for hiring managers.</p>
-      </div>
-      <div class="cc-card">
-        <h3>Risk & Red Flag Detection</h3>
-        <p>Highlight patterns that may warrant deeper conversations or additional checks.</p>
-      </div>
-      <div class="cc-card">
-        <h3>Feedback Loop</h3>
-        <p>Use real placement outcomes to continuously refine the matching model.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
   </main>
 
-    <footer class="cc-footer">
-      <div class="cc-shell cc-footer-inner">
+  <footer class="cc-footer">
+    <div class="cc-shell cc-footer-inner">
+      <div>
+        <div class="cc-footer-title">CoreCloud</div>
+        <div class="cc-footer-text">South Africa’s first AI Operations Cloud.</div>
+      </div>
+      <div class="cc-footer-cols">
         <div>
-          <div class="cc-footer-title">CoreCloud</div>
-          <div class="cc-footer-text">South Africa’s first AI Operations Cloud.</div>
+          <div class="cc-footer-label">Contact</div>
+          <div class="cc-footer-text">admin@corecloud.co.za</div>
+          <div class="cc-footer-text">Johannesburg, South Africa</div>
         </div>
-        <div class="cc-footer-cols">
-          <div>
-            <div class="cc-footer-label">Contact</div>
-            <div class="cc-footer-text">admin@corecloud.co.za</div>
-            <div class="cc-footer-text">Johannesburg, South Africa</div>
-          </div>
-          <div>
-            <div class="cc-footer-label">Explore</div>
-            <a href="platform.html" class="cc-footer-link">Platform</a>
-            <a href="solutions.html" class="cc-footer-link">Solutions</a>
-            <a href="partners.html" class="cc-footer-link">Partners</a>
-          </div>
-        </div>
-        <div class="cc-footer-meta">
-          <span>© {2025} CoreCloud (Pty) Ltd. All rights reserved.</span>
+        <div>
+          <div class="cc-footer-label">Explore</div>
+          <a href="platform.html" class="cc-footer-link">Platform</a>
+          <a href="solutions.html" class="cc-footer-link">Solutions</a>
+          <a href="partners.html" class="cc-footer-link">Partners</a>
         </div>
       </div>
-    </footer>
+      <div class="cc-footer-meta">
+        <span>© 2025 CoreCloud (Pty) Ltd. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
 
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=3"></script>
 </body>
 </html>
