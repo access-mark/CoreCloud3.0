@@ -227,6 +227,19 @@ a{
   transform:translateY(-1px);
 }
 
+/* Dark blue variant for "Book an Assessment" etc */
+.cc-btn-assessment{
+  background:#06173a;
+  border-color:#06173a;
+  color:#e6eefc;
+}
+
+.cc-btn-assessment:hover{
+  background:#0b2458;
+  border-color:#0b2458;
+  transform:translateY(-1px);
+}
+
 .cc-btn-ghost{
   background:transparent;
   border-color:rgba(255,255,255,0.4);
@@ -407,10 +420,31 @@ a{
   margin-top:2.5rem;
 }
 
+/* New layout: left brand, middle explore, right contact */
 .cc-footer-inner{
   display:flex;
-  flex-direction:column;
-  gap:1.25rem;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:2.5rem;
+  flex-wrap:wrap;
+}
+
+/* Left: brand */
+.cc-footer-brand{
+  flex:1 1 220px;
+  text-align:left;
+}
+
+/* Middle: Explore */
+.cc-footer-nav{
+  flex:1 1 180px;
+  text-align:center;
+}
+
+/* Right: Contact */
+.cc-footer-contact{
+  flex:1 1 220px;
+  text-align:right;
 }
 
 .cc-footer-title{
@@ -423,12 +457,6 @@ a{
 .cc-footer-text{
   font-size:.8rem;
   color:rgba(230,238,252,0.8);
-}
-
-.cc-footer-cols{
-  display:flex;
-  flex-wrap:wrap;
-  gap:2rem;
 }
 
 .cc-footer-label{
@@ -452,7 +480,8 @@ a{
 .cc-footer-meta{
   font-size:.75rem;
   color:rgba(230,238,252,0.6);
-  margin-top:.5rem;
+  margin-top:1.5rem;
+  text-align:center;
 }
 
 /* =========================================================
@@ -539,5 +568,18 @@ a{
   .cc-cta-strip-inner{
     flex-direction:column;
     align-items:flex-start;
+  }
+
+  /* Footer stacks clean on mobile */
+  .cc-footer-inner{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:1.25rem;
+  }
+
+  .cc-footer-brand,
+  .cc-footer-nav,
+  .cc-footer-contact{
+    text-align:left;
   }
 }
