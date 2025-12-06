@@ -5,118 +5,135 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CoreCloud Marketplace Pricing Engine</title>
   <meta name="description" content="AI-driven Marketplace Pricing Engine for predictive hardware pricing and lifecycle optimisation." />
-  <link rel="stylesheet" href="assets/css/corecloud.css" />
+  <link rel="stylesheet" href="assets/css/corecloud.css?v=3" />
   <link rel="icon" href="assets/images/corecloud-logo.png" />
 </head>
+
 <body>
+  <canvas id="cc-ai-bg"></canvas>
 
-    <header class="cc-header">
-      <div class="cc-shell cc-header-inner">
-        <a href="index.html" class="cc-brand">
-          <img src="assets/images/corecloud-logo.png" alt="CoreCloud" class="cc-logo" />
-          <span class="cc-brand-text">CoreCloud</span>
-        </a>
-        <button class="cc-nav-toggle" aria-label="Toggle navigation" onclick="CC.toggleNav()">Menu</button>
-        <nav class="cc-nav" id="ccNav">
-          <a href="index.html" class="cc-nav-link">Home</a>
-          <a href="platform.html" class="cc-nav-link">Platform</a>
-          <a href="finops.html" class="cc-nav-link">FinOps AI</a>
-          <a href="talent.html" class="cc-nav-link">Talent AI</a>
-          <a href="pricing.html" class="cc-nav-link cc-active">Pricing AI</a>
-          <a href="navigator.html" class="cc-nav-link">Consulting AI</a>
-          <a href="solutions.html" class="cc-nav-link">Solutions</a>
-          <a href="partners.html" class="cc-nav-link">Partners</a>
-          <a href="about.html" class="cc-nav-link">About</a>
-          <a href="contact.html" class="cc-nav-link">Contact</a>
-        </nav>
-      </div>
-    </header>
+  <!-- HEADER -->
+  <header class="cc-header">
+    <div class="cc-shell cc-header-inner">
+      <a href="index.html" class="cc-brand">
+        <img src="assets/images/corecloud-logo.png" alt="CoreCloud" class="cc-logo" />
+        <span class="cc-brand-text">CoreCloud</span>
+      </a>
 
+      <button class="cc-nav-toggle" aria-label="Toggle navigation" onclick="CC.toggleNav()">Menu</button>
+
+      <nav class="cc-nav" id="ccNav">
+        <a href="index.html" class="cc-nav-link">Home</a>
+        <a href="platform.html" class="cc-nav-link">Platform</a>
+        <a href="finops.html" class="cc-nav-link">FinOps AI</a>
+        <a href="talent.html" class="cc-nav-link">Talent AI</a>
+        <a href="pricing.html" class="cc-nav-link cc-active">Pricing AI</a>
+        <a href="navigator.html" class="cc-nav-link">Consulting AI</a>
+        <a href="solutions.html" class="cc-nav-link">Solutions</a>
+        <a href="partners.html" class="cc-nav-link">Partners</a>
+        <a href="about.html" class="cc-nav-link">About</a>
+        <a href="contact.html" class="cc-nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
   <main class="cc-main">
 
-<section class="cc-hero cc-hero-sub">
-  <div class="cc-shell cc-hero-inner">
-    <div class="cc-hero-copy">
-      <h1>Marketplace Pricing Engine</h1>
-      <p class="cc-hero-lead">
-        Predictive pricing and lifecycle intelligence for new and refurbished hardware, built for South African conditions.
-      </p>
-      <div class="cc-hero-actions">
-        <a href="contact.html" class="cc-btn cc-btn-primary">Unlock Pricing Intelligence</a>
-      </div>
-    </div>
-  </div>
-</section>
+    <section class="cc-hero cc-hero-sub">
+      <div class="cc-shell cc-hero-inner">
+        <div class="cc-hero-copy">
+          <h1>Marketplace Pricing Engine</h1>
+          <p class="cc-hero-lead">
+            Predictive pricing and lifecycle intelligence for new and refurbished hardware, built for South African conditions.
+          </p>
 
-<section class="cc-section">
-  <div class="cc-shell">
-    <h2>Why Hardware Intelligence Matters</h2>
-    <p>
-      Every device has an ideal moment to buy, refurbish, and sell. The Pricing Engine models these dynamics and recommends
-      how to maximise both margin and velocity.
-    </p>
-  </div>
-</section>
+          <div class="cc-hero-actions">
+            <a href="contact.html" class="cc-btn cc-btn-primary">Unlock Pricing Intelligence</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="cc-section cc-section-alt">
-  <div class="cc-shell">
-    <h2>Core Capabilities</h2>
-    <div class="cc-grid cc-grid-3">
-      <div class="cc-card">
-        <h3>Demand Forecasting</h3>
-        <p>Predict demand by category, spec, and buyer profile over time.</p>
+    <section class="cc-section">
+      <div class="cc-shell">
+        <h2>Why Hardware Intelligence Matters</h2>
+        <p>
+          Every device has an ideal moment to buy, refurbish, and sell. The Pricing Engine models these dynamics and recommends
+          how to maximise both margin and velocity.
+        </p>
       </div>
-      <div class="cc-card">
-        <h3>Price-Band Optimisation</h3>
-        <p>Identify the optimal price ranges for different stock types and conditions.</p>
+    </section>
+
+    <section class="cc-section cc-section-alt">
+      <div class="cc-shell">
+        <h2>Core Capabilities</h2>
+
+        <div class="cc-grid cc-grid-3">
+          <div class="cc-card">
+            <h3>Demand Forecasting</h3>
+            <p>Predict demand by category, spec, and buyer profile over time.</p>
+          </div>
+
+          <div class="cc-card">
+            <h3>Price-Band Optimisation</h3>
+            <p>Identify the optimal price ranges for different stock types and conditions.</p>
+          </div>
+
+          <div class="cc-card">
+            <h3>FireSale vs NewGen Mix</h3>
+            <p>Balance aggressive clearance with premium inventory for healthy cashflow and profit.</p>
+          </div>
+
+          <div class="cc-card">
+            <h3>Lifecycle Modelling</h3>
+            <p>Understand when a device is most valuable to specific segments.</p>
+          </div>
+
+          <div class="cc-card">
+            <h3>Stock Movement Prediction</h3>
+            <p>Estimate how long items will take to sell at specific price points.</p>
+          </div>
+
+          <div class="cc-card">
+            <h3>Margin Uplift Tracking</h3>
+            <p>Measure the incremental value of using AI-guided pricing.</p>
+          </div>
+        </div>
       </div>
-      <div class="cc-card">
-        <h3>FireSale vs NewGen Mix</h3>
-        <p>Balance aggressive clearance with premium inventory for healthy cashflow and profit.</p>
-      </div>
-      <div class="cc-card">
-        <h3>Lifecycle Modelling</h3>
-        <p>Understand when a device is most valuable to specific segments.</p>
-      </div>
-      <div class="cc-card">
-        <h3>Stock Movement Prediction</h3>
-        <p>Estimate how long items will take to sell at specific price points.</p>
-      </div>
-      <div class="cc-card">
-        <h3>Margin Uplift Tracking</h3>
-        <p>Measure the incremental value of using AI-guided pricing.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
   </main>
 
-    <footer class="cc-footer">
-      <div class="cc-shell cc-footer-inner">
+  <!-- FOOTER -->
+  <footer class="cc-footer">
+    <div class="cc-shell cc-footer-inner">
+      <div>
+        <div class="cc-footer-title">CoreCloud</div>
+        <div class="cc-footer-text">South Africa’s first AI Operations Cloud.</div>
+      </div>
+
+      <div class="cc-footer-cols">
         <div>
-          <div class="cc-footer-title">CoreCloud</div>
-          <div class="cc-footer-text">South Africa’s first AI Operations Cloud.</div>
+          <div class="cc-footer-label">Contact</div>
+          <div class="cc-footer-text">admin@corecloud.co.za</div>
+          <div class="cc-footer-text">Johannesburg, South Africa</div>
         </div>
-        <div class="cc-footer-cols">
-          <div>
-            <div class="cc-footer-label">Contact</div>
-            <div class="cc-footer-text">admin@corecloud.co.za</div>
-            <div class="cc-footer-text">Johannesburg, South Africa</div>
-          </div>
-          <div>
-            <div class="cc-footer-label">Explore</div>
-            <a href="platform.html" class="cc-footer-link">Platform</a>
-            <a href="solutions.html" class="cc-footer-link">Solutions</a>
-            <a href="partners.html" class="cc-footer-link">Partners</a>
-          </div>
-        </div>
-        <div class="cc-footer-meta">
-          <span>© {2025} CoreCloud (Pty) Ltd. All rights reserved.</span>
+
+        <div>
+          <div class="cc-footer-label">Explore</div>
+          <a href="platform.html" class="cc-footer-link">Platform</a>
+          <a href="solutions.html" class="cc-footer-link">Solutions</a>
+          <a href="partners.html" class="cc-footer-link">Partners</a>
         </div>
       </div>
-    </footer>
 
-  <script src="assets/js/main.js"></script>
+      <div class="cc-footer-meta">
+        <span>© 2025 CoreCloud (Pty) Ltd. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=3"></script>
 </body>
 </html>
