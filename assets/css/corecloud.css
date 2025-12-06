@@ -218,8 +218,10 @@ a{
   padding:2.5rem 0;
 }
 
+/* Semi-translucent alt band so particles show through */
 .cc-section-alt{
-  background:radial-gradient(circle at top,#071129,#050b18);
+  background:radial-gradient(circle at top, rgba(7,17,41,0.78), rgba(5,11,24,0.92));
+  backdrop-filter: blur(10px);
 }
 
 .cc-section h2{
@@ -367,10 +369,11 @@ a{
   color:rgba(230,238,252,0.7);
 }
 
-/* Footer */
+/* Footer — semi-translucent so particles still visible */
 .cc-footer{
-  border-top:1px solid rgba(255,255,255,0.08);
-  background:#050712;
+  border-top:1px solid rgba(255,255,255,0.10);
+  background:rgba(5,7,18,0.94);
+  backdrop-filter: blur(10px);
   padding:2rem 0 1.5rem;
   margin-top:2.5rem;
 }
