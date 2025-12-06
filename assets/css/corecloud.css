@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after{
@@ -33,7 +32,7 @@ a{
 }
 
 .cc-main{
-  padding-top:72px;
+  padding-top:130px;
 }
 
 /* Header */
@@ -50,7 +49,7 @@ a{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  height:72px;
+  height:120px;
 }
 
 .cc-brand{
@@ -60,7 +59,7 @@ a{
 }
 
 .cc-logo{
-  height:32px;
+  height:96px;
 }
 
 .cc-brand-text{
@@ -449,7 +448,7 @@ a{
     display:flex;
   }
   .cc-main{
-    padding-top:86px;
+    padding-top:140px;
   }
   .cc-hero{
     padding:4rem 0 2.5rem;
