@@ -26,6 +26,7 @@ window.CC = {
   }
 
   window.addEventListener("resize", resize);
+  window.addEventListener("load", resize);
   resize();
 
   for(let i = 0; i < COUNT; i++){
