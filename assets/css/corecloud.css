@@ -4,13 +4,19 @@
   box-sizing:border-box;
 }
 
+/* Root */
 html,body{
   margin:0;
   padding:0;
   min-height:100%;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background:#050b18;
+  background:transparent; /* let the canvas own the background */
   color:#e6eefc;
+}
+
+/* Lift main content above canvas */
+body{
+  position:relative;
 }
 
 img{
@@ -33,13 +39,15 @@ a{
 
 .cc-main{
   padding-top:130px;
+  position:relative;
+  z-index:1;
 }
 
 /* Header */
 .cc-header{
   position:fixed;
   top:0; left:0; right:0;
-  z-index:20;
+  z-index:20; /* above everything */
   backdrop-filter:blur(14px);
   background:rgba(5,11,24,0.92);
   border-bottom:1px solid rgba(255,255,255,0.06);
@@ -104,6 +112,8 @@ a{
 /* Hero */
 .cc-hero{
   padding:4.5rem 0 3.5rem;
+  position:relative;
+  z-index:1;
 }
 
 .cc-hero-sub{
@@ -216,6 +226,8 @@ a{
 /* Sections */
 .cc-section{
   padding:2.5rem 0;
+  position:relative;
+  z-index:1;
 }
 
 /* Semi-translucent alt band so particles show through */
@@ -376,6 +388,8 @@ a{
   backdrop-filter: blur(10px);
   padding:2rem 0 1.5rem;
   margin-top:2.5rem;
+  position:relative;
+  z-index:1;
 }
 
 .cc-footer-inner{
@@ -433,8 +447,8 @@ a{
   left:0;
   width:100vw;
   height:100vh;
-  z-index:-1;
-  background:#050b18;
+  z-index:0;             /* behind content, above root background */
+  background:#050b18;    /* your base dark tone */
   pointer-events:none;
   display:block;
 }
